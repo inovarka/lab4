@@ -1,0 +1,8 @@
+print world
+print hello world
+pr a
+aaa
+split a:bc:d:ef :
+split as:s;q.gg
+spl 
+sp a
