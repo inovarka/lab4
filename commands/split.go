@@ -6,13 +6,13 @@ import (
 	"github.com/inovarka/lab4/engine"
 )
 
-type SplitCmd struct {
+type splitCommand struct {
 	Str string
 	Sep string
 }
 
-func (sCmd *SplitCmd) Execute(h engine.Handler) {
+func (sCmd *splitCommand) Execute(h engine.Handler) {
 	splitted := strings.Split(sCmd.Str, sCmd.Sep)
 	joined := strings.Join(splitted, "\n")
-	h.Post(&PrintCmd{joined})
+	h.Post(&printCommand{joined})
 }
